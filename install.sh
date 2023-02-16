@@ -2,6 +2,12 @@
 
 domain=$1
 
+if [ -z $1 ]
+then
+  echo "Please enter your domain: (example.com)\n > "
+  read domain
+fi
+
 # Certification
 apt update && apt upgrade -y
 apt install curl socat -y
@@ -21,8 +27,3 @@ bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/insta
 apt install nginx
 cp ./nginx.conf /etc/nginx/nginx.conf
 nginx -s reload
-
-# Firewall
-ufw allow 22
-ufw allow 443
-ufw allow 
