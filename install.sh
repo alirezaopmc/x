@@ -15,5 +15,5 @@ apt update && apt upgrade -y
 bash ./src/make_cert.sh
 
 # X-UI
-bash ./make-xui-data.sh
+bash ./src/make-xui-data.sh
 bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/install_en.sh) < xui.data
