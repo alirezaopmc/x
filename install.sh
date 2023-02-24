@@ -12,7 +12,7 @@ fi
 apt update && apt upgrade -y
 
 # Certification
-bash ./src/make_cert.sh
+bash ./src/make_cert.sh $domain
 
 # X-UI
 bash ./src/make-xui-data.sh

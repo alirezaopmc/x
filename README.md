@@ -1,2 +1,2 @@
-# xnrp-ws
-x-ui nginx reverse proxy - websocket
+# x
+xray x-ui setup
